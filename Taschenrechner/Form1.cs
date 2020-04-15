@@ -31,5 +31,14 @@ namespace Taschenrechner
             lblOperator.Text = "+";
 
         }
+
+        private void btnSub_Click(object sender, EventArgs e)
+        {
+            double zahl1 = Convert.ToDouble(txtOperand1.Text);
+            double zahl2 = Convert.ToDouble(txtOperand2.Text);
+            double ergebnis = zahl1 - zahl2;
+            lblErgebnis.Text = Convert.ToString(ergebnis);
+            lblOperator.Text = "-";
+        }
     }
 }
